@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+ <modelVersion>4.0.0</modelVersion>
+ <groupId>com.thetdgroup</groupId>
+ <artifactId>tdg.parent</artifactId>
+ <version>1.0.0</version>
+ <packaging>pom</packaging>
+ <name>TDG Software Repository</name>
+ <url>www.thetdgroup.com</url>
+
+ <organization>
+  <name>The Technology Development Group</name>
+  <url>www.thetdgroup.com</url>
+ </organization>
+  
+ <properties>
+  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  <publish.dir>/Users/ericdamphousse/tdg-repository/</publish.dir>
+  <project.deploy>/Users/ericdamphousse/tdg-repository/${project.artifactId}/</project.deploy>
+ </properties>
+ 
+ <distributionManagement>
+  <repository>
+   <id>tdg-repository-site</id>
+   <name>The Technology Development Group Repository</name>
+   <url>file:////Users/ericdamphousse/tdg-repository/</url>
+  </repository>
+ </distributionManagement> 
+ 
+ <build>
+  <plugins>
+  
+   <!-- Compile -->
+   <plugin>
+     <artifactId>maven-compiler-plugin</artifactId>
+     <version>2.3.2</version>
+     <configuration>
+       <source>1.6</source>
+       <target>1.6</target>
+     </configuration>
+   </plugin>
+
+  </plugins>
+ </build>
+
+</project>
